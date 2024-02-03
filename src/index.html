@@ -14,17 +14,44 @@
           rel="stylesheet">
     <!--main styles-->
     <link href="../css/styles.css" rel="stylesheet">
-    <title>Tailwind Setup</title>
+    <title>tw-responsive-navbar</title>
 </head>
 <body class="bg-gray-800">
-<div class="container mx-auto">
-    <section>
-        <div class="text-center mt-12">
-            <h1 class="text-3xl uppercase font-heading text-neutral-100 font-bold">Welcome To TailwindCSS Setup</h1>
-            <h3 class="text-2xl mt-6 font-bold font-body capitalize underline text-neutral-400">A Start-up For Projects </h3>
-        </div>
-    </section>
+<!-- preloader-->
+<div id="preloader">
+    <img src="../img/running-horse.gif" alt="running horse" id="preloader-gif"/>
 </div>
+<!-- header and navigation-->
+<header class="header">
+    <div class="header__navbar">
+        <a href="#" class="logo">LogoBrand</a>
+        <nav class="navbar__nav">
+            <ul class="navbar__list">
+                <li class="navbar__list_item">
+                    <a href="#" class="navbar__list_link underline-hover-effect active">home</a>
+                </li>
+                <li class="navbar__list_item">
+                    <a href="#" class="navbar__list_link underline-hover-effect">about</a>
+                </li>
+                <li class="navbar__list_item">
+                    <a href="#" class="navbar__list_link underline-hover-effect">services</a>
+                </li>
+                <li class="navbar__list_item">
+                    <a href="#" class="navbar__list_link underline-hover-effect">blog</a>
+                </li>
+                <li class="navbar__list_item ">
+                    <a href="#" class="navbar__list_link underline-hover-effect">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="hamburger__bar"></div>
+            <div class="hamburger__bar"></div>
+            <div class="hamburger__bar"></div>
+        </div>
+    </div>
+</header>
+
 <!-- jquery scripts -->
 <script src="../js/jquery-3.6.4.min.js"></script>
 <!-- sweetalert scripts-->
