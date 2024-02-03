@@ -1,4 +1,4 @@
-# 00-tailwind-setup
+# tw-responsive-navbar
 
 This is a simple HTML, CSS, and JavaScript application utilizing Tailwind git CSS.
 
