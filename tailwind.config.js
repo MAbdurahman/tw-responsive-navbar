@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-   content: ['./src/**/*.{html,js}'], theme: {
+   content: ['./components/**/*.{html,js}', './pages/**/*.{html,js}', './index.html',],
+   theme: {
       colors: {
          'clr-blue-02-000': 'hsl(204, 70%, 95%)',
          'clr-blue-02-100': 'hsl(204, 70%, 91%)',
@@ -32,8 +33,7 @@ module.exports = {
          'clr-augmented-01-700': 'hsl(210, 29% 22%)',
          'clr-augmented-01-800': 'hsl(210, 29% 18%)',
          'clr-augmented-01-900': 'hsl(210, 29% 15%)'
-      },
-      extend: {
+      }, extend: {
          fontFamily: {
             heading: ['PT Serif', 'serif'],
             body: ['PT Sans', 'sans-serif'],
@@ -57,5 +57,6 @@ module.exports = {
             'tf-snappy': 'cubic-bezier(0.5, 0, 0.4, 0.98)'
          },
       },
-   }, plugins: [],
+   },
+   plugins: [],
 }
