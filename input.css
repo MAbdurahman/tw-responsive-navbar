@@ -23,6 +23,7 @@
    *:focus {
       outline: none;
    }
+
    html {
       width: 100vw;
       min-width: 100vw;
@@ -78,32 +79,47 @@
       font-size: 3.052rem;
    }
 
-   h2 {font-size: 2.441rem;}
+   h2 {
+      font-size: 2.441rem;
+   }
 
-   h3 {font-size: 1.953rem;}
+   h3 {
+      font-size: 1.953rem;
+   }
 
-   h4 {font-size: 1.563rem;}
+   h4 {
+      font-size: 1.563rem;
+   }
 
-   h5 {font-size: 1.25rem;}
+   h5 {
+      font-size: 1.25rem;
+   }
 
-   small, .text_small {font-size: 0.8rem;}
+   small, .text_small {
+      font-size: 0.8rem;
+   }
 
    .heading-primary {
       margin-top: 0;
       font-size: 3.052rem;
    }
+
    .heading-secondary {
       font-size: 2.441rem;
    }
+
    .heading-tertiary {
       font-size: 1.953rem;
    }
+
    .paragraph {
       font-size: 1.6rem;
+
       &:not(:last-child) {
          margin-bottom: 3em;
       }
    }
+
    /* Chrome, Safari, Edge, Opera */
    input::-webkit-outer-spin-button,
    input::-webkit-inner-spin-button {
@@ -216,6 +232,7 @@
       letter-spacing: 1px;
       @apply text-clr-neutral-04-200;
    }
+
    /*Extra small devices (portrait phones, less than 576px)*/
    .wrapper {
       width: 100%;
@@ -224,6 +241,7 @@
       padding-left: 16px;
       padding-right: 16px;
    }
+
    /*Small devices (landscape phones, 576px and up)*/
    @media (min-width: 576px) {
       .wrapper {
@@ -298,7 +316,7 @@
 
 @layer components {
    /*=============================================
-          preloader section
+          preloader section #ccd1d1 #212e3b
 ================================================*/
    #preloader {
       position: fixed;
@@ -307,7 +325,7 @@
       right: 0;
       bottom: 0;
       /*background-image: radial-gradient(circle, #f1f3f3 28%, #f1f3f3 100%);*/
-      background-image: radial-gradient(circle, #212e3b 28%, #212e3b 100%);
+      background-image: radial-gradient(circle, #ccd1d1 28%, #ccd1d1 100%);
       display: -webkit-box;
       display: flex;
       -webkit-box-align: center;
@@ -335,6 +353,7 @@
       width: 100%;
       @apply bg-clr-augmented-01-800;
    }
+
    .header__navbar {
       width: 80vw;
       margin-left: auto;
@@ -345,6 +364,7 @@
       justify-content: space-between;
       align-items: center;
    }
+
    .logo {
       @apply font-heading;
       font-size: 24px;
@@ -352,6 +372,7 @@
       letter-spacing: -0.5px;
       @apply text-clr-neutral-04-100;
    }
+
    .logo-brand {
       @apply font-heading;
       font-size: 1.25rem;
@@ -359,6 +380,7 @@
       letter-spacing: -0.5px;
       @apply text-clr-neutral-04-100;
    }
+
    .navbar__nav {
       display: flex;
       align-items: center;
@@ -371,6 +393,7 @@
       flex-direction: row;
       column-gap: 40px;
    }
+
    .navbar__list_link {
       @apply font-body;
       font-size: 16px;
@@ -380,6 +403,7 @@
       @apply text-clr-neutral-04-100;
 
    }
+
    .navbar__list_link.active,
    .navbar__list_link:hover {
       @apply text-clr-neutral-04-100;
@@ -439,6 +463,7 @@
    .hamburger--open .hamburger__bar:nth-child(3) {
       transform: translateY(-7px) rotate(-45deg);
    }
+
    .footer {
       margin-top: auto;
       display: flex;
@@ -465,12 +490,9 @@
    }
 
 
-
-
    /*=============================================
              media queries
    ================================================*/
-
    @media only screen and (max-width: 1100px) {
       .header__navbar {
          width: 90vw;
@@ -501,6 +523,7 @@
          @apply bg-clr-augmented-01-800;
          transform: translate(-100%); /* to come from right; set translate(100%) */
       }
+
       .navbar__nav--open {
          transform: translateX(0) !important;
       }
