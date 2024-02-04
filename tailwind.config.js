@@ -25,16 +25,16 @@ module.exports = {
          'clr-neutral-04-700': 'hsl(184, 5%, 40%)',
          'clr-neutral-04-800': 'hsl(184, 5%, 34%)',
          'clr-neutral-04-900': 'hsl(184, 5%, 27%)',
-         'clr-augmented-01-000': 'hsl(210, 12% 93%)',
-         'clr-augmented-01-100': 'hsl(210, 12% 86%)',
-         'clr-augmented-01-200': 'hsl(210, 12% 71%)',
-         'clr-augmented-01-300': 'hsl(210, 12% 57%)',
-         'clr-augmented-01-400': 'hsl(210, 15% 43%)',
-         'clr-augmented-01-500': 'hsl(210, 29% 29%)',
-         'clr-augmented-01-600': 'hsl(210, 29% 25%)',
-         'clr-augmented-01-700': 'hsl(210, 29% 22%)',
-         'clr-augmented-01-800': 'hsl(210, 29% 18%)',
-         'clr-augmented-01-900': 'hsl(210, 29% 15%)'
+         'clr-augmented-01-000': 'hsl(210, 12%, 93%)',
+         'clr-augmented-01-100': 'hsl(210, 12%, 86%)',
+         'clr-augmented-01-200': 'hsl(210, 12%, 71%)',
+         'clr-augmented-01-300': 'hsl(210, 12%, 57%)',
+         'clr-augmented-01-400': 'hsl(210, 15%, 43%)',
+         'clr-augmented-01-500': 'hsl(210, 29%, 29%)',
+         'clr-augmented-01-600': 'hsl(210, 29%, 25%)',
+         'clr-augmented-01-700': 'hsl(210, 29%, 22%)',
+         'clr-augmented-01-800': 'hsl(210, 29%, 18%)',
+         'clr-augmented-01-900': 'hsl(210, 29%, 15%)'
       }, extend: {
          fontFamily: {
             heading: ['PT Serif', 'serif'],

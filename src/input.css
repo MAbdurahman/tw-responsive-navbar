@@ -3,6 +3,26 @@
 @tailwind utilities;
 
 @layer base {
+   *,
+   *::after,
+   *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+   }
+
+   *::-moz-focus-inner {
+      border: 0;
+   }
+
+   *:focus {
+      outline: none;
+   }
    html {
       width: 100vw;
       min-width: 100vw;
@@ -286,7 +306,8 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-image: radial-gradient(circle, #f1f3f3 28%, #f1f3f3 100%);
+      /*background-image: radial-gradient(circle, #f1f3f3 28%, #f1f3f3 100%);*/
+      background-image: radial-gradient(circle, #212e3b 28%, #212e3b 100%);
       display: -webkit-box;
       display: flex;
       -webkit-box-align: center;
