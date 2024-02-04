@@ -1,5 +1,5 @@
 /* ============================================
-            preloader
+          tw-responsive-navbar preloader
 ===============================================*/
 $(window).on('load', function () {
     // makes sure that whole site is loaded
@@ -8,14 +8,14 @@ $(window).on('load', function () {
 });
 
 /*=============================================
-          js-simple-navbar scripts
+          tw-responsive-navbar scripts
 ================================================*/
 $(function () {
     const navbar_navigation = document.querySelector('.navbar__nav');
     const hamburger = document.querySelector('.hamburger');
 
-    /*const sections = document.querySelectorAll('section');*/
-    /*const listLinks = document.querySelectorAll('.navbar__list_link');*/
+    const sections = document.querySelectorAll('section');
+    const listLinks = document.querySelectorAll('.navbar__list_link');
 
     hamburger.addEventListener('click', () => {
         navbar_navigation.classList.toggle('navbar__nav--open');
@@ -27,7 +27,7 @@ $(function () {
         hamburger.classList.remove('hamburger--open');
     });
 
-    /*window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
         sections.forEach(section => {
             let top = window.scrollY;
             let offset = section.offsetTop - 200;
@@ -41,5 +41,5 @@ $(function () {
                 });
             }
         });
-    });*/
+    });
 });

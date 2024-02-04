@@ -3,6 +3,49 @@
 @tailwind utilities;
 
 @layer base {
+   html {
+      width: 100vw;
+      min-width: 100vw;
+      min-height: 100vh;
+      height: 100vh;
+      scroll-behavior: smooth;
+      font-size: 100%;
+   }
+
+   @media only screen and (max-width: 420px) {
+      html {
+         font-size: 83.333%;
+      }
+   }
+
+   @media only screen and (max-width: 360px) {
+      html {
+         font-size: 66.667%;
+      }
+   }
+
+   @media only screen and (max-width: 320px) {
+      html {
+         font-size: 55%;
+      }
+   }
+
+   body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+      @apply font-body;
+   }
+
+   ul {
+      list-style: none;
+   }
+
+   a {
+      text-decoration: none;
+   }
+
    h1, h2, h3, h4, h5 {
       margin: 3rem 0 1.38rem;
       @apply font-heading;
@@ -109,6 +152,49 @@
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       column-gap: 2rem;
+   }
+
+   .section {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+   }
+
+   .section1 {
+      @apply bg-clr-augmented-01-600;
+      height: 100vh;
+   }
+
+   .section2 {
+      @apply bg-clr-augmented-01-400;
+      height: 100vh;
+   }
+
+   .section3 {
+      @apply bg-clr-augmented-01-600;
+      height: 100vh;
+   }
+
+   .section4 {
+      @apply bg-clr-augmented-01-500;
+      height: 100vh;
+   }
+
+   .section5 {
+      @apply bg-clr-augmented-01-400;
+      height: 90vh;
+   }
+
+   .section__text {
+      @apply font-heading;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      @apply text-clr-neutral-04-200;
    }
    /*Extra small devices (portrait phones, less than 576px)*/
    .wrapper {
@@ -255,11 +341,10 @@
    .navbar__nav {
       display: flex;
       align-items: center;
-      transition: transform 0.33s cubic-bezier(0.5, 0, 0.4, 0.98);
+      /*transition: transform 0.33s cubic-bezier(0.5, 0, 0.4, 0.98);*/
+      transition: transform 0.33s cubic-bezier(.17, .67, .83, .67);
    }
-   .navbar__nav--open {
-      transform: translateX(0) !important;
-   }
+
    .navbar__list {
       display: flex;
       flex-direction: row;
@@ -317,7 +402,7 @@
       width: 27px;
       margin: 5px 0;
       background-color: rgba(255, 255, 255, 0.8);
-      transition: all 0.33s cubic-bezier(0.5, 0, 0.4, 0.98);
+      transition: all 0.33s cubic-bezier(.17, .67, .83, .67);
 
    }
 
@@ -332,6 +417,30 @@
 
    .hamburger--open .hamburger__bar:nth-child(3) {
       transform: translateY(-7px) rotate(-45deg);
+   }
+   .footer {
+      margin-top: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   .footer .copyright {
+      width: 100%;
+      height: 10vh;
+      padding: 32px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      font-size: 1.125rem;
+      text-align: center;
+      @apply text-clr-neutral-04-100;
+      @apply bg-clr-augmented-01-800;
+
    }
 
 
@@ -368,10 +477,12 @@
          height: 100vh;
          justify-content: center;
          padding: 16px 0 32px;
-         background-color: rgb(19, 22, 28);
+         @apply bg-clr-augmented-01-800;
          transform: translate(-100%); /* to come from right; set translate(100%) */
       }
-
+      .navbar__nav--open {
+         transform: translateX(0) !important;
+      }
 
       .navbar__list {
          position: relative;
