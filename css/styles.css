@@ -665,7 +665,6 @@ input[type=number] {
   left: 0;
   right: 0;
   bottom: 0;
-  /*background-image: radial-gradient(circle, #f1f3f3 28%, #f1f3f3 100%);*/
   background-image: radial-gradient(circle, #ccd1d1 28%, #ccd1d1 100%);
   display: flex;
   align-items: center;
@@ -726,7 +725,6 @@ input[type=number] {
 .navbar__nav {
   display: flex;
   align-items: center;
-  /*transition: transform 0.33s cubic-bezier(0.5, 0, 0.4, 0.98);*/
   transition: transform 0.33s cubic-bezier(.17, .67, .83, .67);
 }
 
