@@ -656,7 +656,7 @@ input[type=number] {
 }
 
 /*=============================================
-          preloader section
+          preloader section #ccd1d1 #212e3b
 ================================================*/
 
 #preloader {
@@ -666,7 +666,7 @@ input[type=number] {
   right: 0;
   bottom: 0;
   /*background-image: radial-gradient(circle, #f1f3f3 28%, #f1f3f3 100%);*/
-  background-image: radial-gradient(circle, #212e3b 28%, #212e3b 100%);
+  background-image: radial-gradient(circle, #ccd1d1 28%, #ccd1d1 100%);
   display: flex;
   align-items: center;
   justify-content: center;

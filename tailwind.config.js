@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-   content: ['./public/index.html',
-      './src/**/*.{html,js}'
-   ],
-   theme: {
+   content: ['./public/index.html', './src/**/*.{html,js}'], theme: {
       colors: {
          'clr-blue-02-000': 'hsl(204, 70%, 95%)',
          'clr-blue-02-100': 'hsl(204, 70%, 91%)',
@@ -59,6 +56,5 @@ module.exports = {
             'tf-snappy': 'cubic-bezier(0.5, 0, 0.4, 0.98)'
          },
       },
-   },
-   plugins: [],
+   }, plugins: [],
 }
