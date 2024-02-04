@@ -2,7 +2,7 @@
   "name": "tw-responsive-navbar",
   "version": "1.0.0",
   "description": "a simple Tailwind CSS application",
-  "main": "src/index.html",
+  "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./css/styles.css",
     "watch": "tailwindcss -i ./src/input.css -o ./css/styles.css --watch"
